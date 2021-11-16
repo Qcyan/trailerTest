@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - 12
+branchs:
+  - main
+addons:
+  apt:
+    packages:
+    - sshpass
+install:
+  "npm install"
+script:
+  - "npm run build"
+
+
